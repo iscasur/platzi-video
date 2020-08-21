@@ -4,13 +4,9 @@ import "../assets/styles/components/CarouselItem.scss";
 import playIcon from "../assets/static/play-icon.png";
 import plusIcon from "../assets/static/plus-icon.png";
 
-const CarouselItem = () => (
+const CarouselItem = ({ cover, title, year, contentRating, duration }) => (
   <div className="carousel-item">
-    <img
-      className="carousel-item__img"
-      src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt=""
-    />
+    <img className="carousel-item__img" src={cover} alt={title} />
     <div className="carousel-item__details">
       <div>
         <img
@@ -24,8 +20,10 @@ const CarouselItem = () => (
           alt="Plus"
         />
       </div>
-      <p className="carousel-item__details--title">Title</p>
-      <p className="carousel-item__details--subtitle">2019 16+ 114 mins</p>
+      <p className="carousel-item__details--title">{title}</p>
+      <p className="carousel-item__details--subtitle">
+        {`${year} ${contentRating} ${duration}`}
+      </p>
     </div>
   </div>
 );
