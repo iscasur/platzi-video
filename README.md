@@ -15,7 +15,7 @@ Israel Castro Urieta [@iscasur](https://twitter.com/iscasur)
 
 ## Run this project
 
-Clone the repositori
+Clone the repository
 
 `git clone https://github.com/iscasur/platzi-video`
 
